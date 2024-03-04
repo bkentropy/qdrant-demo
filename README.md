@@ -19,6 +19,7 @@ And change the lines in `main.py` you can try it out.
 
 # Client
 See `main.py` to init, and `query.py` to make queries.
+The first time you run `main.py` it will create a `local_cache` directory for the model to create word embeddings.
 
 # Package.md
 I kind of gave up using the in browser UI console, because it would have taken a large amount of work to:
