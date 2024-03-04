@@ -1,17 +1,12 @@
 # Server
 ## Local
-I ran:
-```
-docker run -p 6333:6333 qdrant/qdrant:latest
-```
-To get started, go to http://localhost:6333/.
-
-Notice there is no storage, I recommend:
+To start the qdrant server locally, run:
 ```
 docker run -p 6333:6333 -p 6334:6334 \
     -v $(pwd)/qdrant_storage:/qdrant/storage:z \
     qdrant/qdrant
 ```
+To get the browser UI, go to http://localhost:6333/dashboard.
 
 ## Remote
 I never got the remote running. But if you set
@@ -19,7 +14,7 @@ I never got the remote running. But if you set
 export QDRANT_API_KEY=<KEY>
 export QDRANT_URL=<your-server-url>
 ```
-You can try it out.
+And change the lines in `main.py` you can try it out.
 
 
 # Client
